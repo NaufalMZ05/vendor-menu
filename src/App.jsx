@@ -1,19 +1,19 @@
 import { Route, Routes } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
-import AllApps from "./pages/AllApps";
+import Home from "./pages/Home";
 import Analytics from "./pages/Analytics";
-import Authentication from "./pages/Authentication";
+import GetReviews from "./pages/GetReviews";
 import Build from "./pages/Build";
 import Settings from "./pages/Settings";
-import Stroage from "./pages/Stroage";
+import ShowCase from "./pages/ShowCase";
 
 const App = () => {
   return (
     <RootLayout>
       <Routes>
-        <Route path="/" element={<AllApps />} />
-        <Route path="/authentication" element={<Authentication />} />
-        <Route path="/stroage" element={<Stroage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/get-review" element={<GetReviews />} />
+        <Route path="/showcase" element={<ShowCase />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/build/:bID" element={<Build />} />
         <Route path="/analytics/:aID" element={<Analytics />} />

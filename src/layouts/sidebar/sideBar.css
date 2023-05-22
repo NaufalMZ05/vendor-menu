@@ -1,0 +1,104 @@
+/* active class */
+
+
+/* .active {
+
+} */
+
+.link {
+    padding: 7px;
+    display: flex;
+    border-radius: 1rem 0 0 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    cursor: default;
+    transition-duration: 300ms;
+    font-weight: 700;
+    margin-left: -10px;
+}
+
+.link.active {
+   color: #6cc2bc;
+    background-color: #fff;
+}
+
+.link.active .fill-current {
+    fill: #6cc2bc;
+}
+
+
+/* submenu highlight */
+.sublink {
+    padding: 5px;
+    display: flex;
+    border-radius: 1rem 0 0 1rem;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    cursor: default;
+    transition-duration: 300ms;
+    font-weight: 500;
+    /* margin-left: -10px; */
+}
+
+.sublink.active {
+    color: #fff;
+    background-color: #339890;
+}
+
+.last-child {
+    margin-right: 0px;
+}
+
+/* submenu style */
+.submenu-style {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: -12px;
+    
+}
+
+/* vertical lining */
+.submenu-line {
+    position: absolute;
+    top: -13px;
+    bottom: -35px;
+    left: -40px;
+    width: 1px;
+    background-color: #fff;
+    content: "";
+}
+/*  */
+.submenu-list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    /* Add this line */
+}
+
+.submenu-list li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    /* Add this line */
+}
+
+
+
+.icon-wrapper {
+    margin-right: 0.5rem;
+    /* Adjust the margin as needed */
+}
+
+
+
+/* showcase icon */
+#OBJECT {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    /* Add more styles here as needed */
+}
