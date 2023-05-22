@@ -4,6 +4,7 @@ import vitePluginSvgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/vendor-menu",
   plugins: [react(), vitePluginSvgr()],
   server: {
     host: true,
